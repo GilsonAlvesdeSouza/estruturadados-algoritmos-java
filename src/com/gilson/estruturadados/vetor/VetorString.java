@@ -1,20 +1,20 @@
 package com.gilson.estruturadados.vetor;
 
-public class Vetor {
-  private Object[] elementos;
+public class VetorString {
+  private String[] elementos;
   private int tamanhoVetor;
 
-  public Vetor() {
-    this.elementos = new Object[10];
+  public VetorString() {
+    this.elementos = new String[10];
     this.tamanhoVetor = 0;
   }
 
-  public Vetor(int capacidade) {
-    this.elementos = new Object[capacidade];
+  public VetorString(int capacidade) {
+    this.elementos = new String[capacidade];
     this.tamanhoVetor = 0;
   }
 
-  public boolean adicionar(Object elemento) {
+  public boolean adicionar(String elemento) {
     this.aumentaCapacidade();
     if (this.tamanhoVetor < this.elementos.length) {
       this.elementos[this.tamanhoVetor] = elemento;
@@ -25,7 +25,7 @@ public class Vetor {
     }
   }
 
-  public boolean adicionar(int posicao, Object elemento) {
+  public boolean adicionar(int posicao, String elemento) {
     if (!(posicao >= 0 && posicao < this.tamanhoVetor)) {
       throw new IllegalArgumentException("Posicão inválida");
     }
@@ -43,14 +43,14 @@ public class Vetor {
     return this.tamanhoVetor;
   }
 
-  public Object busca(int posicao) {
+  public String busca(int posicao) {
     if (!(posicao >= 0 && posicao < this.tamanhoVetor)) {
       throw new IllegalArgumentException("Posicão inválida");
     }
     return this.elementos[posicao];
   }
 
-  public int busca(Object elemento) {
+  public int busca(String elemento) {
     var count = 0;
     while (count < this.tamanhoVetor) {
       if (this.elementos[count].equals(elemento)) {
@@ -61,7 +61,7 @@ public class Vetor {
     return -1;
   }
 
-  public boolean remover(Object elemento) {
+  public boolean remover(String elemento) {
     var existe = this.busca(elemento);
     if (existe == -1) {
       return false;
@@ -100,7 +100,7 @@ public class Vetor {
 
   private void aumentaCapacidade() {
     if (this.tamanhoVetor == this.elementos.length) {
-      Object[] elementosNovos = new Object[this.elementos.length * 2];
+      String[] elementosNovos = new String[this.elementos.length * 2];
       for (int i = 0; i < this.elementos.length; i++) {
         elementosNovos[i] = this.elementos[i];
       }

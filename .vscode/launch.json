@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VetorTest",
+            "request": "launch",
+            "mainClass": "com.gilson.estruturadados.teste.VetorTest",
+            "projectName": "estruturadados-algoritmos-java_1e4302ea"
+        },
+        {
+            "type": "java",
+            "name": "VetorStringTest",
+            "request": "launch",
+            "mainClass": "com.gilson.estruturadados.teste.VetorStringTest",
+            "projectName": "estruturadados-algoritmos-java_1e4302ea"
+        },
+        {
+            "type": "java",
+            "name": "Aula02",
+            "request": "launch",
+            "mainClass": "com.gilson.estruturadados.teste.Aula02",
+            "projectName": "estruturadados-algoritmos-java_1e4302ea"
+        },
+        {
+            "type": "java",
             "name": "Aula02",
             "request": "launch",
             "mainClass": "com.gilson.estruturadados.vetor.teste.Aula02",
