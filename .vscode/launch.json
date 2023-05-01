@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ListaTest",
+            "request": "launch",
+            "mainClass": "com.gilson.estruturadados.teste.ListaTest",
+            "projectName": "estruturadados-algoritmos-java_1e4302ea"
+        },
+        {
+            "type": "java",
             "name": "VetorTest",
             "request": "launch",
             "mainClass": "com.gilson.estruturadados.teste.VetorTest",
